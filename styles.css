@@ -1,0 +1,24 @@
+@import url(./styles/header.css);
+:root{
+    --cor-de-fundo:#EBEECE;
+    --branco:white;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.container_botao:checked ~ .lista-menu{
+    display: block;
+}
+.cabeçalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
